@@ -31,24 +31,24 @@ packages = [ {include = "pypfopt"} ]
 "Personal website" = "https://reasonabledeviations.com"
 
 [tool.poetry.dependencies]
-python = "^3.5"
+python = "^3.6"
 numpy = "^1.12"
 scipy = "^1.3"
 pandas = ">=0.19"
 cvxpy = "^1.0"
-cvxopt = "^1.2"
+cvxopt = "^1.2, !=1.2.5.post1"
+scikit-learn = { version = "^0.24.1", optional = true }
+matplotlib = { version = "^3.3.3", optional = true }
 
 [tool.poetry.dev-dependencies]
 pytest = "^4.6"
 flake8 = "^3.7"
-black = {version = "^18.9b0", python = "^3.6"}
+black = "^18.9b0"
 rope = "^0.14.0"
-# ipython = "^7.13.0"
 jupyter = "^1.0.0"
 
 [tool.poetry.extras]
-scikit-learn = ["^0.19"]
-matplotlib = ["^3.2.0"]
+optionals = ["scikit-learn", "matplotlib"]
 
 [build-system]
 requires = ["poetry>=0.12"]
