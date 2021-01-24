@@ -44,6 +44,7 @@ def test_efficient_return():
     np.testing.assert_allclose(
         es.portfolio_performance(),
         (0.2500001777470832, 0.10035962239578998, 2.291760094911752),
+        rtol=1e4,
     )
 
 
