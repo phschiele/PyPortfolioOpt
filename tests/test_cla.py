@@ -99,7 +99,7 @@ def test_cla_max_sharpe_semicovariance():
     np.testing.assert_almost_equal(cla.weights.sum(), 1)
     np.testing.assert_allclose(
         cla.portfolio_performance(),
-        (0.2721798377099145, 0.07258537193305141, 3.474251505420551),
+        (0.2721783867639869, 0.07258489850967567, 3.4742541760304473),
     )
 
 
